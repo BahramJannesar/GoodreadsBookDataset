@@ -12,6 +12,6 @@ We decided to start collecting book information from [Goodreads API](https://www
     pip install goodreads
 
 ### Data Collectors
-* [Soursh Ghaderi](https://github.com/SoroushGhaderi) (:hammer:)
+* [Soursh Ghaderi](https://github.com/SoroushGhaderi) ( :hammer: )
 
-* [Bahram Jannesar](https://github.com/BahramJannesar) (:hammer:)
+* [Bahram Jannesar](https://github.com/BahramJannesar) ( :hammer: )
