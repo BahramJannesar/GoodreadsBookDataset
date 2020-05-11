@@ -1,5 +1,5 @@
 # GoodReads
-[Goodreads](https://www.goodreads.com/) is a social cataloging website that allows individuals to search freely its database of books, annotations, and reviews. Users can sign up and register books to generate library catalogs and reading lists. They can also create their own groups of book suggestions, surveys, polls, blogs, and discussions .
+[Goodreads](https://www.goodreads.com/) is a social cataloging website that allows individuals to search freely its database of books, annotations, and reviews. Users can sign up and register books to generate library catalogs and reading lists. They can also create their own groups of book suggestions, surveys, polls, blogs, and discussions.
 
 ![](https://github.com/BahramJannesar/Goodreads-book-dataset/blob/master/image/goodreads_logo.png)
 
