@@ -8,14 +8,14 @@ api_key = 'PpYBUoitliItUuI1DJpw'
 api_token = 'UvfyWFTlE9PIlG1Mrmd025333p5wKDcEwD1R1Skiw'
 book_list = []
 all_book_title = []
-book_number = 76757
+book_number = 600000
 
 
 gc = client.GoodreadsClient(api_key, api_token)
 
 
 def API_json(gc, book_number, all_book_title, book_list):
-    while(book_number < 76760):
+    while(book_number < 700000):
         try:
             book = gc.book(book_number)
             dist = book.rating_dist
@@ -39,7 +39,8 @@ def API_json(gc, book_number, all_book_title, book_list):
                 "RatingDistTotal": dist.split('|')[5],
                 "CountsOfReview": int(book.text_reviews_count),
                 "Language": book.language_code,
-                "pagesNumber": int(book.num_pages),
+                "PagesNumber": int(book.num_pages),
+                "Description" : book.description,
             }
             if book.title not in all_book_title:
                 book_list.append(book_dic)
