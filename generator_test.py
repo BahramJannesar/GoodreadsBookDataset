@@ -8,14 +8,14 @@ api_key = 'PpYBUoitliItUuI1DJpw'
 api_token = 'UvfyWFTlE9PIlG1Mrmd025333p5wKDcEwD1R1Skiw'
 book_list = []
 all_book_title = []
-book_number = 600000
+book_number = 1
 
 
 gc = client.GoodreadsClient(api_key, api_token)
 
 
 def API_json(gc, book_number, all_book_title, book_list):
-    while(book_number < 700000):
+    while(book_number < 10000000):
         try:
             book = gc.book(book_number)
             dist = book.rating_dist
