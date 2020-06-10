@@ -4,8 +4,8 @@ import time
 import requests
 
 
-api_key = 'PpYBUoitliItUuI1DJpw'
-api_token = 'UvfyWFTlE9PIlG1Mrmd025333p5wKDcEwD1R1Skiw'
+api_key = ''
+api_token = ''
 book_list = []
 all_book_title = []
 book_number = 1
