@@ -32,7 +32,7 @@ We decided to start collecting book information from [Goodreads API](https://www
     "RatingDist5": "5:891037",
     "ISBN": "0316769177",
     "RatingDist3": "3:553476"
-}
+                    }
    
    
 ### Data Collectors
