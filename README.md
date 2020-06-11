@@ -6,11 +6,6 @@
 ### Goodreads book dataset
 We decided to start collecting book information from [Goodreads API](https://www.goodreads.com/api) to analyze the data of the world's books. Approximately 10,000,000 books are available on the site's archives, and this project is collecting them. for requesting on the API , we used [Goodreads python library](https://pypi.org/project/Goodreads/) , 
 ***The project data is updated every 2 days.***
-
-### Instalation recommended 
-
-    pip install requests 
-    pip install goodreads
     
 ### Book sample
         
