@@ -35,7 +35,7 @@ We decided to start collecting book information from [Goodreads API](https://www
     "RatingDist3": "3:553476"
                     }
                     
-### Best qout ever 
+### Best Quot Ever 
 
 > Don't ever tell anybody anything, if you do, you start missing everybody
   J.D. Salinger
