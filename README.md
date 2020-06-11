@@ -10,7 +10,31 @@ We decided to start collecting book information from [Goodreads API](https://www
 ### Instalation recommended 
     pip install requests 
     pip install goodreads
-
+    
+### Books file likes :
+        
+                    {
+    "Id": "5107",
+    "Name": "The Catcher in the Rye",
+    "RatingDist1": "1:133165",
+    "pagesNumber": 277,
+    "RatingDist4": "4:808278",
+    "RatingDistTotal": "total:2610840",
+    "PublishMonth": 30,
+    "PublishDay": 1,
+    "Publisher": "Back Bay Books",
+    "CountsOfReview": 44046,
+    "PublishYear": 2001,
+    "Language": "eng",
+    "Authors": "J.D. Salinger",
+    "Rating": 3.8,
+    "RatingDist2": "2:224884",
+    "RatingDist5": "5:891037",
+    "ISBN": "0316769177",
+    "RatingDist3": "3:553476"
+}
+   
+   
 ### Data Collectors
 * [Soursh Ghaderi](https://github.com/SoroushGhaderi) ( :hammer: )
 
