@@ -1,7 +1,4 @@
-### Best qout ever 
-> Don't ever tell anybody anything, if you do, you start missing everybody*
-  J.D. Salinger
-### GoodReads
+## GoodReads
 [Goodreads](https://www.goodreads.com/) is a social cataloging website that allows individuals to search freely its database of books, annotations, and reviews. Users can sign up and register books to generate library catalogs and reading lists. They can also create their own groups of book suggestions, surveys, polls, blogs, and discussions.
 
 ![](https://github.com/BahramJannesar/Goodreads-book-dataset/blob/master/image/goodreads_logo.png)
@@ -37,7 +34,11 @@ We decided to start collecting book information from [Goodreads API](https://www
     "ISBN": "0316769177",
     "RatingDist3": "3:553476"
                     }
-   
+                    
+### Best qout ever 
+
+> Don't ever tell anybody anything, if you do, you start missing everybody
+  J.D. Salinger
    
 ### Data Collectors
 * [Soursh Ghaderi](https://github.com/SoroushGhaderi) ( :hammer: )
