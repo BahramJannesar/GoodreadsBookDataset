@@ -8,10 +8,11 @@ We decided to start collecting book information from [Goodreads API](https://www
 ***The project data is updated every five days.***
 
 ### Instalation recommended 
+
     pip install requests 
     pip install goodreads
     
-### Books file likes :
+### Book sample
         
                     {
     "Id": "5107",
