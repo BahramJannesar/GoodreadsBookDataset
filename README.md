@@ -11,7 +11,7 @@ We decided to start collecting book information from [Goodreads API](https://www
 
 ### On Kaggle
 
-if you want to see better this dataset ,check on kaggle and then please **upvote** ( :+1: ) dataset , Thanks a lot from now ( :green_heart: )
+if you want to see better dataset better than here ,check it on kaggle from this [**link**](https://www.kaggle.com/bahramjannesarr/goodreads-books-dataset) and then please **upvote** ( :+1: ) dataset , Thanks a lot from now ( :green_heart: )
 
     
 ### Book sample
