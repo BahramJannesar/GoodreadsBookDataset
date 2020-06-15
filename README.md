@@ -8,7 +8,7 @@
 
 We decided to start collecting book information from [Goodreads API](https://www.goodreads.com/api) to analyze the data of the world's books. Approximately 10,000,000 books are available on the site's archives, and this project is collecting them. for requesting on the API , we used [Goodreads Python library](https://pypi.org/project/Goodreads/).
 
-***The dataset will be updated every 2 days.*** ( :books: )
+**The dataset will be updated every 2 days.** ( :books: )
 
 ### On Kaggle
 
