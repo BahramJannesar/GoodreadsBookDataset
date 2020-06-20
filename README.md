@@ -1,11 +1,22 @@
+
 ## GoodReads
+
 [Goodreads](https://www.goodreads.com/) is a social cataloging website that allows individuals to search freely its database of books, annotations, and reviews. Users can sign up and register books to generate library catalogs and reading lists. They can also create their own groups of book suggestions, surveys, polls, blogs, and discussions .
 
 ![](https://github.com/BahramJannesar/Goodreads-book-dataset/blob/master/image/goodreads_logo.png)
 
 ### Goodreads book dataset
-We decided to start collecting book information from [Goodreads API](https://www.goodreads.com/api) to analyze the data of the world's books. Approximately 10,000,000 books are available on the site's archives, and this project is collecting them. for requesting on the API , we used [Goodreads python library](https://pypi.org/project/Goodreads/) , 
-***The project data is updated every 2 days.***
+
+We decided to start collecting book information from [Goodreads API](https://www.goodreads.com/api) to analyze the data of the world's books. Approximately 10,000,000 books are available on the site's archives, and this project is collecting them. for requesting on the API , we used [Goodreads Python library](https://pypi.org/project/Goodreads/).
+
+**The datasets will be updated every 2 days. ** ( :books: )
+
+### What do you think about 10M book data ? Check it On Kaggle
+
+If you want to see dataset better than here, check it on kaggle from this [**link**](https://www.kaggle.com/bahramjannesarr/goodreads-books-dataset) and then please **upvote** ( :+1: ) dataset
+
+Thanks a lot from now ( :green_heart: )
+
     
 ### Book sample
         
@@ -36,6 +47,7 @@ We decided to start collecting book information from [Goodreads API](https://www
   J.D. Salinger
    
 ### Data Collectors
+
 * [Soursh Ghaderi](https://github.com/SoroushGhaderi) ( :hammer: )
 
 * [Bahram Jannesar](https://github.com/BahramJannesar) ( :hammer: )
