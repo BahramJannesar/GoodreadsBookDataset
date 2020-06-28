@@ -43,7 +43,7 @@ if (counts_of_text_review / 30) >= 10:
     limit_of_page_review = 10
 elif (counts_of_text_review / 30) < 10 and (counts_of_text_review / 30) > 1:
     limit_of_page_review = counts_of_text_review / 30
-elif (counts_of_text_review / 30) <= 1 and (counts_of_text_review / 30) > 0 :
+elif (counts_of_text_review / 30) <= 1 and (counts_of_text_review / 30) > 0:
     limit_of_page_review = 1
 
 
@@ -53,6 +53,7 @@ i = 0
 reviwe_list = []
 if counts_of_text_review != 0:
     while i < limit_of_page_review:
+
         # spolier_reviews = driver.find_elements_by_css_selector('em a')
         # for spoiler_button in spolier_reviews:
         #     spoiler_button.click()
@@ -61,41 +62,52 @@ if counts_of_text_review != 0:
         # for read_button in read_more_button:
         #     read_button.click()
 
-        
-        reviews = driver.find_elements_by_xpath(
-            '//*[(@id = "bookReviews")]//*[contains(concat( " ", @class, " " ), concat( " ", "readable", " " ))]//span')
+        likes_number = driver.find_elements_by_xpath(
+            '//*[(@id = "bookReviews")]//*[contains(concat( " ", @class, " " ), concat( " ", "likesCount", " " ))]')
+        source_page = driver.page_source
+        soup = BeautifulSoup(source_page, 'html.parser')
+        reviews = soup.find_all('div', attrs={'class': 'reviewText stacked'})
 
-        for each in reviews:
-            print(each.text)
-            reviwe_list.append(each.text)
+        for review, like in zip(reviews, likes_number):
+            review = re.sub(r'\.*(more)', '', review.text)
+            review = re.sub(
+                r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', review)
+            first_part_of_review = review[0:500]
+            second_part_of_review = review[500:-1]
 
- 
+            if len(first_part_of_review) > len(second_part_of_review):
+                with open('book.txt', 'a') as file:
+                    file.write(first_part_of_review + '\n')
+            else:
+                with open('book.txt', 'a') as file:
+                    file.write(second_part_of_review + '\n')
+
         if limit_of_page_review > 1:
             time.sleep(4)
-            button_next_page = driver.find_element_by_xpath(
+            button_next_page=driver.find_element_by_xpath(
                 '//*[contains(concat( " ", @class, " " ), concat( " ", "next_page", " " ))]')
             button_next_page.click()
-            i = 1 + i
+            i=1 + i
         else:
             break
 
-    book_dic = {
-                    "Id": int(book_id),
-                    "BookName": book_name.text,
-                    "reviews": reviwe_list[62:-1]
+#     book_dic = {
+#                     "Id": int(book_id),
+#                     "BookName": book_name.text,
+#                     "reviews": reviwe_list[62:-1]
 
-    }
-    
-    book_js = json.dumps(book_dic, indent=4)
-    with open('book.json', 'w') as file:
-        file.write(book_js)
-else:
-    book_dic = {
-                "Id": int(book_id),
-                "BookName": book_name.text,
-                "reviews": 'This book dosent have any text review'
+#     }
 
-            }
-    book_js = json.dumps(book_dic, indent=4)
-    with open('book.json', 'w') as file:
-        file.write(book_js)
+#     book_js = json.dumps(book_dic, indent=4)
+#     with open('book.json', 'w') as file:
+#         file.write(book_js)
+# else:
+#     book_dic = {
+#                 "Id": int(book_id),
+#                 "BookName": book_name.text,
+#                 "reviews": 'This book dosent have any text review'
+
+#             }
+#     book_js = json.dumps(book_dic, indent=4)
+#     with open('book.json', 'w') as file:
+#         file.write(book_js)
