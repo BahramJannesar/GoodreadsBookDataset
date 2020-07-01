@@ -79,7 +79,6 @@ def review_scraper_generator(book_id , driver):
 
                 source_page = driver.page_source
                 soup = BeautifulSoup(source_page, 'html.parser')
-                # reviews = soup.find_all('div', attrs={'class': 'reviewText stacked'})
                 reviews = soup.find_all('span', attrs={'class': 'readable'})
 
                 for review in reviews:
@@ -107,9 +106,6 @@ def review_scraper_generator(book_id , driver):
 
 
             yield book_dic
-
-
-
 
         else:
             book_dic = {
