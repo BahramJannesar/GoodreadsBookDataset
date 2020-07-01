@@ -18,8 +18,8 @@ chromedriver = "driver/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 actions = ActionChains(driver)
-username_login = 'ba.jannesar@gmail.com'
-password_login = 'elnazghazalnilofar'
+username_login = ''
+password_login = ''
 
 
 def login(driver , username_login ,password_login):
