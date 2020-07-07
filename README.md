@@ -19,7 +19,9 @@ Thanks a lot from now ( :green_heart: )
 
     
 ### Book sample
-        
+
+JSON :
+
                     {
     "Id": "5107",
     "Name": "The Catcher in the Rye",
@@ -44,6 +46,10 @@ Thanks a lot from now ( :green_heart: )
     circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for 
     three days. "
                     }
+                    
+CSV :
+
+    5107,The Catcher in the Rye,1:133165,277,4:808278,total:2610840,30,1,Back Bay Books,44046,2001,eng,J.D.         Salinger,3.8,2:224884,5:891037,0316769177,3:553476,55539,"The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a native New Yorker named     Holden Caulfield. Through circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for three days. "
                     
 ### Best Quot Ever 
 
