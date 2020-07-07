@@ -39,6 +39,10 @@ Thanks a lot from now ( :green_heart: )
     "RatingDist5": "5:891037",
     "ISBN": "0316769177",
     "RatingDist3": "3:553476"
+    "Count of text reviews": 55539,
+    "Description": "The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a native New Yorker named Holden Caulfield. Through 
+    circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for 
+    three days. "
                     }
                     
 ### Best Quot Ever 
