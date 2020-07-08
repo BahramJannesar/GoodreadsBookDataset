@@ -85,7 +85,7 @@ def review_scraper_generator(book_id , driver):
                     review = re.sub(r'\.*(more)', '', review.text)
                     review = re.sub(
                         r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', review)
-
+                    review = review.replace('\n' , '')
                     reviwe_list.append(review)
 
                 if limit_of_page_review > 1:
@@ -124,8 +124,8 @@ if __name__ == "__main__":
 
     login(driver , username_login ,password_login)
 
-    for book , book_id in review_scraper_generator(book_id , driver):
+    for book in review_scraper_generator(book_id ,driver):
         print('Reviews of the book number {} , Done!'.format(book_id))
-        book_js = json.dumps(book, indent=4)
+        book_js = json.dumps(book, indent=4 ,ensure_ascii=False)
         with open('books_reviews.json', 'a') as file:
             file.write(book_js + ',')
