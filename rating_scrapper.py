@@ -5,12 +5,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
-from goodreads import client
 import os
-import requests
 import time
-import re
-from bs4 import BeautifulSoup
 import json
 import math
 
