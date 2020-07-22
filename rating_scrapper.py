@@ -20,7 +20,8 @@ chrome_option.add_argument("--disable-gpu")
 chrome_option.add_argument("--no-sandbox")
 chrome_option.add_argument("--window-size=1920,1200")
 chrome_option.add_argument("--ignore-certificate-errors")
-driver = webdriver.Chrome(chromedriver , chrome_options=chrome_option)
+
+driver = webdriver.Chrome(chromedriver, chrome_options=chrome_option)
 actions = ActionChains(driver)
 
 user_id = 1
@@ -47,11 +48,12 @@ def login(driver , username_login ,password_login):
 
 def rating_scraper(user_id , driver):
 
-    while user_id < 1000 :
-        try:        
-            driver.get('https://www.goodreads.com/review/list/{}?per_page=100&shelf=read'.format(user_id))
+    while user_id < 1000000 :
+    
+        driver.get('https://www.goodreads.com/review/list/{}?per_page=100&shelf=read'.format(user_id))
 
-            time.sleep(3)
+        time.sleep(3)
+        try:    
             counts_of_rating = int(driver.find_element_by_css_selector('#header .greyText').text[1:-1])
             count_of_rating_page = math.ceil(counts_of_rating / 100)
 
