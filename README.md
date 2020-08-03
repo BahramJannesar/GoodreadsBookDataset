@@ -13,7 +13,7 @@ We decided to start collecting book information from [Goodreads API](https://www
 
 ### What do you think about 10M book data ? Check it On Kaggle
 
-If you want to see dataset better than here, check it on kaggle from this [**link**](https://www.kaggle.com/bahramjannesarr/goodreads-books-dataset) and then please **upvote** ( :+1: ) dataset
+If you want to see dataset better than here, check it on kaggle from this [**link**](https://www.kaggle.com/bahramjannesarr/goodreads-book-datasets-10m/) and then please **upvote** ( :+1: ) dataset
 
 Thanks a lot from now ( :green_heart: )
 
