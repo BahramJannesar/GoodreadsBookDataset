@@ -119,13 +119,17 @@ def review_scraper_generator(book_id , driver):
 
         book_id += 1
 
-
-if __name__ == "__main__":
-
-    login(driver , username_login ,password_login)
+def save_object():
 
     for book in review_scraper_generator(book_id ,driver):
         print('Reviews of the book number {} , Done!'.format(book_id))
         book_js = json.dumps(book, indent=4 ,ensure_ascii=False)
         with open('books_reviews.json', 'a') as file:
             file.write(book_js + ',')
+
+
+if __name__ == "__main__":
+
+    login(driver , username_login ,password_login)
+
+    save_object()

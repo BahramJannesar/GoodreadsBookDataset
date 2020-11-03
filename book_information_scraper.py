@@ -58,8 +58,14 @@ def API_json(gc, book_number, all_book_title, book_list):
             book_number += 1
             time.sleep(1)
 
+def  save_object():
 
-for each in API_json(gc, book_number, all_book_title, book_list):
-    book_js = json.dumps(each, indent=4)
-    with open('book.json', 'a') as file:
-        file.write(book_js + ',')
+    for each in API_json(gc, book_number, all_book_title, book_list):
+        book_js = json.dumps(each, indent=4)
+        with open('book.json', 'a') as file:
+            file.write(book_js + ',')
+
+
+if __name__ == "__main__":
+    
+    save_object()
