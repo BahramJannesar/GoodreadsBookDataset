@@ -12,6 +12,7 @@ import math
 
 
 
+
 chromedriver = "driver/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
 chrome_option = Options()
